@@ -17,8 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Inove Brand Colors */
+    --primary: 218 100% 25%; /* Azul Royal #1f2b6c */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 218 100% 35%;
+    --primary-glow: 218 100% 50%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,32 +29,37 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 70% 55%; /* Dourado #D4AF37 */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 218 100% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Inove Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.95), hsl(var(--primary-light) / 0.9));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(43 60% 65%));
+    
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -101,5 +109,65 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-elegant;
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent to-yellow-400 text-accent-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95;
+  }
+
+  .btn-dark {
+    @apply bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gray-800 hover:shadow-elegant hover:scale-105 active:scale-95;
+  }
+
+  /* Section Backgrounds */
+  .section-primary {
+    @apply bg-gradient-to-br from-primary via-primary-light to-primary;
+  }
+
+  .section-hero {
+    @apply bg-gradient-to-br from-primary/95 via-primary-light/90 to-primary/95;
+  }
+
+  .section-dark {
+    @apply bg-gray-900;
+  }
+
+  /* Animation Classes */
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .parallax {
+    @apply transform transition-transform duration-300 ease-out;
+  }
+
+  /* Card Styles */
+  .card-elegant {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100 transition-all duration-300 hover:shadow-elegant hover:scale-105;
+  }
+
+  /* WhatsApp Floating Button */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 z-50;
   }
 }
