@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Inove Brand Colors */
-    --primary: 218 100% 25%; /* Azul Royal #1f2b6c */
+    --primary: 225 54% 33%; /* #273473 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 218 100% 35%;
-    --primary-glow: 218 100% 50%;
+    --primary-light: 225 54% 43%;
+    --primary-glow: 225 54% 60%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -37,7 +37,7 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 218 100% 25%;
+    --ring: 225 54% 33%;
 
     --radius: 0.75rem;
 
@@ -118,21 +118,21 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Hero Button Variants */
+  /* Premium Button Variants with Enhanced Spacing */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95 shadow-elegant;
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-elegant;
+    @apply bg-transparent border-2 border-primary text-primary px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-elegant;
   }
 
   .btn-accent {
-    @apply bg-gradient-to-r from-accent to-yellow-400 text-accent-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-accent to-yellow-400 text-accent-foreground px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:shadow-glow hover:scale-105 active:scale-95 shadow-elegant;
   }
 
   .btn-dark {
-    @apply bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gray-800 hover:shadow-elegant hover:scale-105 active:scale-95;
+    @apply bg-gray-900 text-white px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:bg-gray-800 hover:shadow-elegant hover:scale-105 active:scale-95;
   }
 
   /* Section Backgrounds */
