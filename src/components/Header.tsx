@@ -34,9 +34,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src="/lovable-uploads/0cb678f6-e41b-4d60-8c10-e8fe36be5cfb.png" 
-              alt="Inove Odontologia" 
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F5089900ac19c4caa91966cf657bc3f36"
+              alt="Inove Odontologia"
               className="h-12 lg:h-16 w-auto"
             />
           </div>

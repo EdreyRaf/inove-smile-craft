@@ -137,11 +137,17 @@ All colors MUST be HSL.
 
   /* Section Backgrounds */
   .section-primary {
-    @apply bg-gradient-to-br from-primary via-primary-light to-primary;
+    background-image: url('https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F45fd8981141b4dd7a000770ae6bdb487');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .section-hero {
-    @apply bg-gradient-to-br from-primary/95 via-primary-light/90 to-primary/95;
+    background-image: url('https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F0f8939b08a614f18bbda0fd6c05d4499');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .section-dark {
