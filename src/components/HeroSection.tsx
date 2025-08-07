@@ -45,9 +45,10 @@ const HeroSection = () => {
                 CLIQUE AQUI PARA SABER MAIS
               </Button>
               
-              <Button 
-                className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary"
+              <Button
+                className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary mt-1"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
+                style={{ paddingTop: '8px', paddingBottom: '6px' }}
               >
                 FALAR NO WHATSAPP
               </Button>
