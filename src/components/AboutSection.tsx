@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { useEffect, useRef, useState } from 'react';
+import CarouselStats from '@/components/ui/carousel-stats';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,6 +22,24 @@ const AboutSection = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  const statsData = [
+    {
+      value: "15+",
+      title: "Anos de Experiência", 
+      description: "Especialização e dedicação em reabilitação oral"
+    },
+    {
+      value: "1000+",
+      title: "Pacientes Atendidos",
+      description: "Sorrisos transformados com excelência"
+    },
+    {
+      value: "100%",
+      title: "Satisfação",
+      description: "Compromisso com resultados excepcionais"
+    }
+  ];
 
   return (
     <section 
@@ -44,30 +63,8 @@ const AboutSection = () => {
             avançadas e uma equipe altamente capacitada.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-16">
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-10 text-center transition-all duration-300 hover:bg-white/15 hover:scale-105">
-              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl lg:text-4xl font-bold text-white">15+</span>
-              </div>
-              <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">Anos de Experiência</h3>
-              <p className="text-lg lg:text-xl text-white/80 leading-relaxed">Especialização e dedicação em reabilitação oral</p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-10 text-center transition-all duration-300 hover:bg-white/15 hover:scale-105">
-              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl lg:text-3xl font-bold text-white">1000+</span>
-              </div>
-              <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">Pacientes Atendidos</h3>
-              <p className="text-lg lg:text-xl text-white/80 leading-relaxed">Sorrisos transformados com excelência</p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-10 text-center transition-all duration-300 hover:bg-white/15 hover:scale-105">
-              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl lg:text-4xl font-bold text-white">100%</span>
-              </div>
-              <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">Satisfação</h3>
-              <p className="text-lg lg:text-xl text-white/80 leading-relaxed">Compromisso com resultados excepcionais</p>
-            </div>
+          <div className="mb-16">
+            <CarouselStats items={statsData} />
           </div>
           
           <Button 

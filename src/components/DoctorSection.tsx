@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { useEffect, useRef, useState } from 'react';
+import CarouselInfo from '@/components/ui/carousel-info';
 
 const DoctorSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,6 +22,25 @@ const DoctorSection = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  const doctorInfo = [
+    {
+      title: "Especialização",
+      description: "Implantodontia e Reabilitação Oral"
+    },
+    {
+      title: "Experiência", 
+      description: "15+ anos em odontologia"
+    },
+    {
+      title: "Formação",
+      description: "Especialista em Implantes"
+    },
+    {
+      title: "Localização",
+      description: "Garanhuns, Pernambuco"
+    }
+  ];
 
   return (
     <section 
@@ -62,23 +82,8 @@ const DoctorSection = () => {
               Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-12">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
-                <h4 className="text-xl lg:text-2xl font-semibold text-accent mb-3">Especialização</h4>
-                <p className="text-lg lg:text-xl text-white/80">Implantodontia e Reabilitação Oral</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
-                <h4 className="text-xl lg:text-2xl font-semibold text-accent mb-3">Experiência</h4>
-                <p className="text-lg lg:text-xl text-white/80">15+ anos em odontologia</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
-                <h4 className="text-xl lg:text-2xl font-semibold text-accent mb-3">Formação</h4>
-                <p className="text-lg lg:text-xl text-white/80">Especialista em Implantes</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
-                <h4 className="text-xl lg:text-2xl font-semibold text-accent mb-3">Localização</h4>
-                <p className="text-lg lg:text-xl text-white/80">Garanhuns, Pernambuco</p>
-              </div>
+            <div className="mb-12">
+              <CarouselInfo items={doctorInfo} />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">

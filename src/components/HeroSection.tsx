@@ -61,7 +61,7 @@ const HeroSection = () => {
             <div className="relative max-w-lg mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary-light/20 rounded-3xl transform rotate-3" />
               <img 
-                src="/lovable-uploads/6d1b5b8b-adb0-4faa-b679-d076aafaf38a.png"
+                src="/lovable-uploads/a67cd8e0-b30d-4b4a-8023-7b9330b63d62.png"
                 alt="Dr. Eterno Freitas - Especialista em Implantes Dentários"
                 className="relative z-10 w-full rounded-3xl shadow-glow"
               />
