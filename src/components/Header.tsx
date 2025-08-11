@@ -55,9 +55,10 @@ const Header = () => {
             >
               Procedimentos
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('doutor')}
               className="text-foreground hover:text-primary transition-colors font-medium"
+              style={{ border: '1px solid rgba(255, 255, 255, 0)' }}
             >
               Quem é Eterno Freitas
             </button>

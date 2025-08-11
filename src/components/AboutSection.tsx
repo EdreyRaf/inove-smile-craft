@@ -25,12 +25,12 @@ const AboutSection = () => {
 
   const statsData = [
     {
-      value: "15+",
+      value: "+15",
       title: "Anos de Experiência", 
       description: "Especialização e dedicação em reabilitação oral"
     },
     {
-      value: "1000+",
+      value: "+1K",
       title: "Pacientes Atendidos",
       description: "Sorrisos transformados com excelência"
     },
@@ -69,6 +69,7 @@ const AboutSection = () => {
           
           <Button 
             className="btn-dark"
+            style={{ backgroundColor: '#ddaf3c' }}
             onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
           >
             ENTRAR EM CONTATO

@@ -52,7 +52,7 @@ const DoctorSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           
           {/* Doctor Image */}
-          <div className={`transition-all duration-1000 order-2 lg:order-1 ${
+          <div className={`transition-all duration-1000 order-2 lg:order-1 flex ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
             <div className="relative max-w-lg mx-auto lg:mx-0">
@@ -87,17 +87,11 @@ const DoctorSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button 
+              <Button
                 className="btn-accent"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
               >
                 MARCAR ATENDIMENTO
-              </Button>
-              <Button 
-                className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('https://www.instagram.com/espaco.inove/', '_blank')}
-              >
-                VER NO INSTAGRAM
               </Button>
             </div>
           </div>

@@ -26,7 +26,7 @@ const ProceduresSection = () => {
     <section 
       id="procedimentos"
       ref={sectionRef}
-      className="py-24 lg:py-40 bg-gray-50"
+      className="py-24 lg:py-40 bg-gray-50 flex"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         
