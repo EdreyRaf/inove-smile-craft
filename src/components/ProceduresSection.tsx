@@ -91,7 +91,7 @@ const ProceduresSection = () => {
             </div>
             <div className="lg:order-1">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2Fdfc25cf137084e2586a92a47be4e6f40?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F1a417315dd964d5eba6431195f857c8c?format=webp&width=800"
                 alt="Implantes Dentários"
                 className="w-full rounded-3xl shadow-elegant hover:shadow-glow transition-all duration-500"
               />
@@ -104,7 +104,7 @@ const ProceduresSection = () => {
           }`}>
             <div>
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2Fc08fe5228fab4007b79edac18605e880?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2Fd4536e0e193e477189c18fb3d9d70593?format=webp&width=800"
                 alt="Prótese Protocolo"
                 className="w-full rounded-3xl shadow-elegant hover:shadow-glow transition-all duration-500"
               />
