@@ -55,7 +55,7 @@ const CarouselStats = ({ items }: CarouselStatsProps) => {
               <div key={index} className="w-full flex-shrink-0 px-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center transition-all duration-300 hover:bg-white/15">
                   <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-white">{item.value}</span>
+                    <span className="font-bold text-white" style={{ fontSize: '27px' }}>{item.value}</span>
                   </div>
                   <h3 className="text-2xl font-semibold text-white mb-4">{item.title}</h3>
                   <p className="text-lg text-white/80 leading-relaxed">{item.description}</p>
@@ -88,7 +88,7 @@ const CarouselStats = ({ items }: CarouselStatsProps) => {
         {items.map((item, index) => (
           <div key={index} className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-10 text-center transition-all duration-300 hover:bg-white/15 hover:scale-105">
             <div className="w-20 h-20 lg:w-24 lg:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-3xl lg:text-4xl font-bold text-white">{item.value}</span>
+              <span className="lg:text-4xl font-bold text-white" style={{ fontSize: '27px' }}>{item.value}</span>
             </div>
             <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">{item.title}</h3>
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed">{item.description}</p>
