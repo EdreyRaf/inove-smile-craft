@@ -43,28 +43,31 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('clinica')}
               className="text-foreground hover:text-primary transition-colors font-medium"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
             >
               Clínica
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('procedimentos')}
               className="text-foreground hover:text-primary transition-colors font-medium"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
             >
               Procedimentos
             </button>
             <button
               onClick={() => scrollToSection('doutor')}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ border: '1px solid rgba(255, 255, 255, 0)' }}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', border: '1px solid rgba(255, 255, 255, 0)' }}
             >
               Quem é Eterno Freitas
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('depoimentos')}
               className="text-foreground hover:text-primary transition-colors font-medium"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', border: '1px solid rgba(255, 255, 255, 0)' }}
             >
               Depoimentos
             </button>
