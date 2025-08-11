@@ -49,7 +49,7 @@ const DoctorSection = () => {
       className="section-dark py-24 lg:py-40"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
           
           {/* Doctor Image */}
           <div className={`transition-all duration-1000 order-2 lg:order-1 flex ${
@@ -69,20 +69,20 @@ const DoctorSection = () => {
           <div className={`transition-all duration-1000 delay-300 order-1 lg:order-2 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 font-playfair leading-tight tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 lg:mb-8 font-playfair leading-tight tracking-tight">
               Dr. Eterno Freitas Jr.
             </h2>
-            <p className="text-2xl lg:text-3xl text-accent mb-8 font-semibold">
+            <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-accent mb-6 lg:mb-8 font-semibold">
               CRO PE-9753
             </p>
-            
-            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 leading-relaxed font-light">
+
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90 mb-8 lg:mb-12 leading-relaxed font-light">
               Especialista em Implantodontia e referência em reabilitação oral em Garanhuns. 
               Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados. 
               Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
             </p>
 
-            <div className="mb-12">
+            <div className="mb-8 lg:mb-12">
               <CarouselInfo items={doctorInfo} />
             </div>
 
