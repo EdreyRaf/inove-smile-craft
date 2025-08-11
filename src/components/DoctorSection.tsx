@@ -48,7 +48,7 @@ const DoctorSection = () => {
       ref={sectionRef}
       className="section-dark py-16 sm:py-20 lg:py-32 xl:py-40"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
           
           {/* Doctor Image */}
