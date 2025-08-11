@@ -46,28 +46,28 @@ const Header = () => {
             <button
               onClick={() => scrollToSection('clinica')}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)' }}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', textShadow: '1px 1px 3px #111962' }}
             >
               Clínica
             </button>
             <button
               onClick={() => scrollToSection('procedimentos')}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)' }}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', textShadow: '1px 1px 3px #111962' }}
             >
               Procedimentos
             </button>
             <button
               onClick={() => scrollToSection('doutor')}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)' }}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
             >
               Quem é Eterno Freitas
             </button>
             <button
               onClick={() => scrollToSection('depoimentos')}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)' }}
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
             >
               Depoimentos
             </button>
