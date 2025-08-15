@@ -49,46 +49,95 @@ const DoctorSection = () => {
       className="section-dark py-8 sm:py-12 lg:py-32 xl:py-40"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 xl:gap-20 items-center">
-          
-          {/* Doctor Image */}
-          <div className={`transition-all duration-1000 order-2 lg:order-1 ${
+        {/* Mobile Layout */}
+        <div className="block lg:hidden">
+          <div className={`text-center mb-6 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-playfair leading-tight tracking-tight">
+              Dr. Eterno Freitas Jr.
+            </h2>
+            <p className="text-base sm:text-lg text-accent mb-4 font-semibold">
+              CRO PE-9753
+            </p>
+
+            <p className="text-sm sm:text-base text-white/90 mb-6 leading-relaxed font-light px-4">
+              Especialista em Implantodontia e referência em reabilitação oral em Garanhuns.
+              Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados.
+              Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
+            </p>
+          </div>
+
+          <div className={`mb-6 transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <div className="relative max-w-[200px] sm:max-w-[250px] lg:max-w-lg mx-auto lg:mx-0">
-              <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl transform rotate-3" />
+            <div className="relative max-w-sm mx-auto">
               <img
                 src="/lovable-uploads/e657a349-ebea-48ad-ae86-eb5f863a7e5d.png"
                 alt="Dr. Eterno Freitas Jr. - CRO PE-9753"
-                className="relative z-10 w-full rounded-2xl lg:rounded-3xl shadow-lg lg:shadow-glow"
+                className="w-full rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+
+          <div className={`mb-6 transition-all duration-1000 delay-300 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
+            <CarouselInfo items={doctorInfo} />
+          </div>
+
+          <div className={`transition-all duration-1000 delay-400 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
+            <Button
+              className="btn-accent w-full text-base font-semibold py-4"
+              onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
+            >
+              MARCAR ATENDIMENTO
+            </Button>
+          </div>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:grid lg:grid-cols-2 gap-16 xl:gap-20 items-center">
+          {/* Doctor Image */}
+          <div className={`transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+          }`}>
+            <div className="relative max-w-lg mx-auto lg:mx-0">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl transform rotate-3" />
+              <img
+                src="/lovable-uploads/e657a349-ebea-48ad-ae86-eb5f863a7e5d.png"
+                alt="Dr. Eterno Freitas Jr. - CRO PE-9753"
+                className="relative z-10 w-full rounded-3xl shadow-glow"
               />
             </div>
           </div>
 
           {/* Doctor Content */}
-          <div className={`transition-all duration-1000 delay-300 order-1 lg:order-2 ${
+          <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-5xl xl:text-6xl font-bold text-white mb-2 sm:mb-3 lg:mb-8 font-playfair leading-tight tracking-tight text-center lg:text-left">
+            <h2 className="text-5xl xl:text-6xl font-bold text-white mb-8 font-playfair leading-tight tracking-tight">
               Dr. Eterno Freitas Jr.
             </h2>
-            <p className="text-xs sm:text-sm lg:text-xl xl:text-2xl text-accent mb-2 sm:mb-3 lg:mb-8 font-semibold text-center lg:text-left">
+            <p className="text-xl xl:text-2xl text-accent mb-8 font-semibold">
               CRO PE-9753
             </p>
 
-            <p className="text-xs sm:text-xs lg:text-lg xl:text-xl text-white/90 mb-3 sm:mb-4 lg:mb-12 leading-relaxed font-light text-center lg:text-left">
+            <p className="text-lg xl:text-xl text-white/90 mb-12 leading-relaxed font-light">
               Especialista em Implantodontia e referência em reabilitação oral em Garanhuns.
               Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados.
               Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
             </p>
 
-            <div className="mb-3 sm:mb-4 lg:mb-12">
+            <div className="mb-12">
               <CarouselInfo items={doctorInfo} />
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Button
-                className="btn-accent w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 py-2 lg:px-6 lg:py-3"
+                className="btn-accent"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
               >
                 MARCAR ATENDIMENTO
