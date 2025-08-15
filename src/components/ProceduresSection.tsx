@@ -102,14 +102,14 @@ const ProceduresSection = () => {
           <div className={`grid lg:grid-cols-2 gap-16 lg:gap-20 items-center transition-all duration-1000 delay-400 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <div>
+            <div className="order-2 lg:order-1">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F8fbbcb5e15a746bf8980a56eb076e87d?format=webp&width=800"
                 alt="Prótese Protocolo"
                 className="w-full rounded-3xl shadow-elegant hover:shadow-glow transition-all duration-500"
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-accent/10 rounded-3xl transform rotate-3" />
                 <div className="relative bg-white rounded-3xl p-10 lg:p-12 shadow-card">
