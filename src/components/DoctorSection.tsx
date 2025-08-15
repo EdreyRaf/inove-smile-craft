@@ -46,7 +46,7 @@ const DoctorSection = () => {
     <section
       id="doutor"
       ref={sectionRef}
-      className="section-dark py-8 sm:py-12 lg:py-32 xl:py-40"
+      className="section-dark py-16 sm:py-20 lg:py-32 xl:py-40"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Mobile Layout */}
