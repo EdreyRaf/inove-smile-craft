@@ -43,57 +43,80 @@ const DoctorSection = () => {
   ];
 
   return (
-    <section 
+    <section
       id="doutor"
       ref={sectionRef}
-      className="section-dark py-16 sm:py-20 lg:py-32 xl:py-40"
+      className="section-dark overflow-hidden"
+      style={{ padding: '16px 0' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
+      <div className="w-full max-w-7xl mx-auto overflow-hidden" style={{ padding: '0 16px' }}>
+        <div className="grid grid-rows-[auto_auto_auto] gap-4 md:gap-6 lg:grid-cols-2 lg:grid-rows-1 lg:gap-16 xl:gap-20 lg:items-center">
           
           {/* Doctor Image */}
-          <div className={`transition-all duration-1000 order-2 lg:order-1 flex ${
+          <div className={`transition-all duration-1000 order-1 lg:order-1 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <div className="relative max-w-lg mx-auto lg:mx-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl transform rotate-3" />
-              <img 
+            <div className="w-full mx-auto" style={{ maxWidth: '420px' }}>
+              <img
                 src="/lovable-uploads/e657a349-ebea-48ad-ae86-eb5f863a7e5d.png"
                 alt="Dr. Eterno Freitas Jr. - CRO PE-9753"
-                className="relative z-10 w-full rounded-3xl shadow-glow"
+                className="w-full h-auto object-cover lg:shadow-glow"
+                style={{ borderRadius: '16px', maxWidth: '420px' }}
               />
             </div>
           </div>
 
           {/* Doctor Content */}
-          <div className={`transition-all duration-1000 delay-300 order-1 lg:order-2 ${
+          <div className={`transition-all duration-1000 delay-300 order-2 lg:order-2 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 lg:mb-8 font-playfair leading-tight tracking-tight">
+            <h2
+              className="font-bold text-white font-playfair leading-tight tracking-tight text-center lg:text-left"
+              style={{
+                fontSize: 'clamp(20px, 4.5vw, 28px)',
+                fontWeight: '700',
+                marginBottom: 'clamp(8px, 2vw, 16px)'
+              }}
+            >
               Dr. Eterno Freitas Jr.
             </h2>
-            <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-accent mb-6 lg:mb-8 font-semibold">
+            <p
+              className="text-accent font-semibold text-center lg:text-left"
+              style={{
+                fontSize: 'clamp(14px, 3.8vw, 18px)',
+                lineHeight: '1.4',
+                marginBottom: 'clamp(8px, 2vw, 16px)'
+              }}
+            >
               CRO PE-9753
             </p>
 
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90 mb-8 lg:mb-12 leading-relaxed font-light">
-              Especialista em Implantodontia e referência em reabilitação oral em Garanhuns. 
-              Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados. 
+            <p
+              className="text-white/90 font-light text-center lg:text-left"
+              style={{
+                fontSize: 'clamp(14px, 3.6vw, 16px)',
+                lineHeight: '1.6',
+                marginBottom: 'clamp(12px, 3vw, 24px)'
+              }}
+            >
+              Especialista em Implantodontia e referência em reabilitação oral em Garanhuns.
+              Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados.
               Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
             </p>
 
-            <div className="mb-8 lg:mb-12">
+            <div style={{ marginBottom: 'clamp(12px, 3vw, 24px)' }}>
               <CarouselInfo items={doctorInfo} />
             </div>
+          </div>
 
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Button
-                className="btn-accent"
-                onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
-              >
-                MARCAR ATENDIMENTO
-              </Button>
-            </div>
+          {/* CTA Button */}
+          <div className="order-3 lg:order-3 lg:col-span-2 lg:justify-self-start">
+            <Button
+              className="btn-accent w-full lg:w-auto"
+              onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
+            >
+              MARCAR ATENDIMENTO
+            </Button>
           </div>
 
         </div>
