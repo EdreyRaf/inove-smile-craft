@@ -46,10 +46,10 @@ const DoctorSection = () => {
     <section
       id="doutor"
       ref={sectionRef}
-      className="section-dark py-16 sm:py-20 lg:py-32 xl:py-40"
+      className="section-dark py-12 sm:py-16 lg:py-32 xl:py-40"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 xl:gap-20 items-center">
           
           {/* Doctor Image */}
           <div className={`transition-all duration-1000 order-2 lg:order-1 ${
@@ -69,20 +69,20 @@ const DoctorSection = () => {
           <div className={`transition-all duration-1000 delay-300 order-1 lg:order-2 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 font-playfair leading-tight tracking-tight text-center lg:text-left">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 lg:mb-8 font-playfair leading-tight tracking-tight text-center lg:text-left">
               Dr. Eterno Freitas Jr.
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-accent mb-4 sm:mb-6 lg:mb-8 font-semibold text-center lg:text-left">
+            <p className="text-sm sm:text-base lg:text-xl xl:text-2xl text-accent mb-3 sm:mb-4 lg:mb-8 font-semibold text-center lg:text-left">
               CRO PE-9753
             </p>
 
-            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-white/90 mb-6 sm:mb-8 lg:mb-12 leading-relaxed font-light text-center lg:text-left">
+            <p className="text-xs sm:text-sm lg:text-lg xl:text-xl text-white/90 mb-4 sm:mb-6 lg:mb-12 leading-relaxed font-light text-center lg:text-left">
               Especialista em Implantodontia e referência em reabilitação oral em Garanhuns.
               Dr. Eterno é reconhecido pelo cuidado com cada paciente e pela excelência nos resultados.
               Na Clínica Inove, cada caso é tratado com planejamento, empatia e precisão clínica.
             </p>
 
-            <div className="mb-6 sm:mb-8 lg:mb-12">
+            <div className="mb-4 sm:mb-6 lg:mb-12">
               <CarouselInfo items={doctorInfo} />
             </div>
 
