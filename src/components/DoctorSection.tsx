@@ -55,7 +55,7 @@ const DoctorSection = () => {
           <div className={`transition-all duration-1000 order-2 lg:order-1 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <div className="relative max-w-sm sm:max-w-md lg:max-w-lg mx-auto lg:mx-0">
+            <div className="relative max-w-xs sm:max-w-sm lg:max-w-lg mx-auto lg:mx-0">
               <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl transform rotate-3" />
               <img
                 src="/lovable-uploads/e657a349-ebea-48ad-ae86-eb5f863a7e5d.png"
