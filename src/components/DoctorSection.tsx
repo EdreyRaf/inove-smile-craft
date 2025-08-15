@@ -30,7 +30,7 @@ const DoctorSection = () => {
     },
     {
       title: "Experiência", 
-      description: "15+ anos em odontologia"
+      description: "+15 anos em odontologia"
     },
     {
       title: "Formação",
