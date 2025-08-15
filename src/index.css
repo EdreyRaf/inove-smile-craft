@@ -179,6 +179,6 @@ All colors MUST be HSL.
 
   /* WhatsApp Floating Button */
   .whatsapp-float {
-    @apply fixed bottom-20 sm:bottom-6 right-4 sm:right-6 bg-green-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 z-50;
+    @apply fixed bottom-24 sm:bottom-6 right-4 sm:right-6 bg-green-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 z-50;
   }
 }
