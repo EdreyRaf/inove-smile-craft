@@ -139,7 +139,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-primary/95 backdrop-blur-md rounded-lg mt-2 p-4 shadow-card">
+          <div className="md:hidden backdrop-blur-md rounded-lg mt-2 p-4 shadow-card" style={{ backgroundColor: '#111827' }}>
             <nav className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection('clinica')}
