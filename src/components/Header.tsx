@@ -56,7 +56,8 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)',
+                opacity: '0'
               }}
             >
               Clínica
@@ -71,7 +72,8 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)',
+                opacity: '0'
               }}
             >
               Procedimentos
@@ -86,7 +88,8 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)',
+                opacity: '0'
               }}
             >
               Quem é Eterno Freitas
@@ -101,7 +104,8 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)',
+                opacity: '0'
               }}
             >
               Depoimentos
@@ -116,7 +120,8 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)',
+                opacity: '0'
               }}
             >
               Entre em contato
