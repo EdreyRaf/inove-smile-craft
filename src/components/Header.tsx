@@ -25,8 +25,8 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-card' 
+        isScrolled
+          ? 'bg-primary/95 backdrop-blur-md shadow-card'
           : 'bg-transparent'
       }`}
     >
@@ -45,36 +45,71 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-4">
             <button
               onClick={() => scrollToSection('clinica')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', textShadow: '1px 1px 3px #111962' }}
+              className={`transition-colors font-semibold text-base lg:text-lg ${
+                isScrolled
+                  ? 'text-white hover:text-accent'
+                  : 'text-primary hover:text-accent'
+              }`}
+              style={{
+                backgroundColor: 'transparent',
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+              }}
             >
               Clínica
             </button>
             <button
               onClick={() => scrollToSection('procedimentos')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', textShadow: '1px 1px 3px #111962' }}
+              className={`transition-colors font-semibold text-base lg:text-lg ${
+                isScrolled
+                  ? 'text-white hover:text-accent'
+                  : 'text-primary hover:text-accent'
+              }`}
+              style={{
+                backgroundColor: 'transparent',
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+              }}
             >
               Procedimentos
             </button>
             <button
               onClick={() => scrollToSection('doutor')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
+              className={`transition-colors font-semibold text-base lg:text-lg ${
+                isScrolled
+                  ? 'text-white hover:text-accent'
+                  : 'text-primary hover:text-accent'
+              }`}
+              style={{
+                backgroundColor: 'transparent',
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+              }}
             >
               Quem é Eterno Freitas
             </button>
             <button
               onClick={() => scrollToSection('depoimentos')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
+              className={`transition-colors font-semibold text-base lg:text-lg ${
+                isScrolled
+                  ? 'text-white hover:text-accent'
+                  : 'text-primary hover:text-accent'
+              }`}
+              style={{
+                backgroundColor: 'transparent',
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+              }}
             >
               Depoimentos
             </button>
             <button
               onClick={() => scrollToSection('contato')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
+              className={`transition-colors font-semibold text-base lg:text-lg ${
+                isScrolled
+                  ? 'text-white hover:text-accent'
+                  : 'text-primary hover:text-accent'
+              }`}
+              style={{
+                backgroundColor: 'transparent',
+                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+              }}
             >
               Entre em contato
             </button>
