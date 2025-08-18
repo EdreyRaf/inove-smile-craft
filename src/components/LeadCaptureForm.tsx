@@ -81,11 +81,11 @@ const LeadCaptureForm = () => {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-gray-50">
+    <section id="contato" className="py-20 lg:py-32 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 font-playfair">
-            Agende Sua Avaliação Gratuita
+            Entre em Contato
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Preencha seus dados e nossa equipe entrará em contato para agendar sua consulta. 
