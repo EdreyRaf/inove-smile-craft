@@ -71,7 +71,14 @@ const Header = () => {
             >
               Depoimentos
             </button>
-            <Button 
+            <button
+              onClick={() => scrollToSection('contato')}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0)', color: 'rgba(255, 255, 255, 1)', border: '1px solid rgba(255, 255, 255, 0)', textShadow: '1px 1px 3px #111962' }}
+            >
+              Entre em contato
+            </button>
+            <Button
               className="btn-hero"
               onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
             >
