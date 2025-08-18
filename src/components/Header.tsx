@@ -121,13 +121,19 @@ const Header = () => {
               >
                 Quem é Eterno Freitas
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('depoimentos')}
                 className="text-left text-foreground hover:text-primary transition-colors font-medium"
               >
                 Depoimentos
               </button>
-              <Button 
+              <button
+                onClick={() => scrollToSection('contato')}
+                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Entre em contato
+              </button>
+              <Button
                 className="btn-hero w-full"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
               >
