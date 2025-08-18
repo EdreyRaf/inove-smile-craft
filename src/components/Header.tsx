@@ -51,10 +51,11 @@ const Header = () => {
               className={`transition-colors font-semibold text-base lg:text-lg ${
                 isScrolled
                   ? 'text-white hover:text-accent'
-                  : 'text-primary hover:text-accent'
+                  : 'hover:text-accent'
               }`}
               style={{
                 backgroundColor: 'transparent',
+                color: isScrolled ? '#ffffff' : '#111827',
                 textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
               }}
             >
@@ -65,10 +66,11 @@ const Header = () => {
               className={`transition-colors font-semibold text-base lg:text-lg ${
                 isScrolled
                   ? 'text-white hover:text-accent'
-                  : 'text-primary hover:text-accent'
+                  : 'hover:text-accent'
               }`}
               style={{
                 backgroundColor: 'transparent',
+                color: isScrolled ? '#ffffff' : '#111827',
                 textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
               }}
             >
@@ -79,10 +81,11 @@ const Header = () => {
               className={`transition-colors font-semibold text-base lg:text-lg ${
                 isScrolled
                   ? 'text-white hover:text-accent'
-                  : 'text-primary hover:text-accent'
+                  : 'hover:text-accent'
               }`}
               style={{
                 backgroundColor: 'transparent',
+                color: isScrolled ? '#ffffff' : '#111827',
                 textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
               }}
             >
@@ -93,10 +96,11 @@ const Header = () => {
               className={`transition-colors font-semibold text-base lg:text-lg ${
                 isScrolled
                   ? 'text-white hover:text-accent'
-                  : 'text-primary hover:text-accent'
+                  : 'hover:text-accent'
               }`}
               style={{
                 backgroundColor: 'transparent',
+                color: isScrolled ? '#ffffff' : '#111827',
                 textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
               }}
             >
@@ -107,10 +111,11 @@ const Header = () => {
               className={`transition-colors font-semibold text-base lg:text-lg ${
                 isScrolled
                   ? 'text-white hover:text-accent'
-                  : 'text-primary hover:text-accent'
+                  : 'hover:text-accent'
               }`}
               style={{
                 backgroundColor: 'transparent',
+                color: isScrolled ? '#ffffff' : '#111827',
                 textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
               }}
             >
