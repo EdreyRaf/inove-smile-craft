@@ -56,7 +56,7 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+
               }}
             >
               Clínica
@@ -71,7 +71,7 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+
               }}
             >
               Procedimentos
@@ -86,7 +86,7 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+
               }}
             >
               Quem é Eterno Freitas
@@ -101,7 +101,7 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+
               }}
             >
               Depoimentos
@@ -116,7 +116,7 @@ const Header = () => {
               style={{
                 backgroundColor: 'transparent',
                 color: isScrolled ? '#ffffff' : '#111827',
-                textShadow: isScrolled ? 'none' : '1px 1px 3px rgba(255,255,255,0.8)'
+
               }}
             >
               Entre em contato
