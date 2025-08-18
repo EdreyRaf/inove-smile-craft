@@ -31,13 +31,13 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 lg:h-28">
+        <div className="flex items-center justify-between h-28 lg:h-32">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F5089900ac19c4caa91966cf657bc3f36"
               alt="Inove Odontologia"
-              className="h-16 lg:h-20 w-auto"
+              className="h-20 lg:h-24 w-auto"
             />
           </div>
 
