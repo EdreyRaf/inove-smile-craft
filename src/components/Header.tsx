@@ -138,33 +138,33 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-primary/95 backdrop-blur-md rounded-lg mt-2 p-4 shadow-card">
             <nav className="flex flex-col space-y-4">
-              <button 
+              <button
                 onClick={() => scrollToSection('clinica')}
-                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left text-white hover:text-accent transition-colors font-semibold text-base"
               >
                 Clínica
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('procedimentos')}
-                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left text-white hover:text-accent transition-colors font-semibold text-base"
               >
                 Procedimentos
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('doutor')}
-                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left text-white hover:text-accent transition-colors font-semibold text-base"
               >
                 Quem é Eterno Freitas
               </button>
               <button
                 onClick={() => scrollToSection('depoimentos')}
-                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left text-white hover:text-accent transition-colors font-semibold text-base"
               >
                 Depoimentos
               </button>
               <button
                 onClick={() => scrollToSection('contato')}
-                className="text-left text-foreground hover:text-primary transition-colors font-medium"
+                className="text-left text-white hover:text-accent transition-colors font-semibold text-base"
               >
                 Entre em contato
               </button>
