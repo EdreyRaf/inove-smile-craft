@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Inove Brand Colors */
-    --primary: 225 54% 33%; /* #273473 */
+    --primary: 215 28% 17%; /* #111827 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 225 54% 43%;
-    --primary-glow: 225 54% 60%;
+    --primary-light: 215 28% 27%;
+    --primary-glow: 215 28% 37%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
