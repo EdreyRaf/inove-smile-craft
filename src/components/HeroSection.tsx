@@ -28,11 +28,11 @@ const HeroSection = () => {
           <div className={`text-center lg:text-left transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 font-playfair leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 font-playfair leading-tight tracking-tight" style={{ color: '#111827' }}>
               O dentista que você procura!
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 leading-relaxed max-w-2xl font-light">
+            <p className="text-xl md:text-2xl lg:text-3xl mb-12 leading-relaxed max-w-2xl font-light" style={{ color: '#111827' }}>
               Na Clínica Inove, acreditamos que a verdadeira estética começa pela função. 
               Nossa especialidade é transformar sorrisos com segurança e excelência clínica.
             </p>
