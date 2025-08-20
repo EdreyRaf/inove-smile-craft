@@ -38,17 +38,18 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button 
+              <Button
                 className="btn-accent text-base lg:text-lg px-10 py-6"
                 onClick={() => scrollToSection('clinica')}
+                style={{ color: '#111827' }}
               >
                 CLIQUE AQUI PARA SABER MAIS
               </Button>
               
               <Button
-                className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary mt-1"
+                className="btn-secondary bg-white/10 border-white hover:bg-white hover:text-primary mt-1"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
-                style={{ paddingTop: '8px', paddingBottom: '6px' }}
+                style={{ paddingTop: '8px', paddingBottom: '6px', color: '#111827' }}
               >
                 FALAR NO WHATSAPP
               </Button>
