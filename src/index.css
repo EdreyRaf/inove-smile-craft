@@ -137,7 +137,8 @@ All colors MUST be HSL.
   }
 
   .btn-dark {
-    @apply bg-gray-900 text-white px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:bg-gray-800 hover:shadow-elegant hover:scale-105 active:scale-95;
+    background-color: #111827;
+    @apply text-white px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:shadow-elegant hover:scale-105 active:scale-95;
   }
 
   /* Section Backgrounds */
