@@ -28,26 +28,28 @@ const HeroSection = () => {
           <div className={`text-center lg:text-left transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 font-playfair leading-tight tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 leading-tight tracking-tight" style={{ color: '#111827', fontFamily: 'Inter, sans-serif', fontWeight: '900' }}>
               O dentista que você procura!
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 leading-relaxed max-w-2xl font-light">
+            <p className="text-base md:text-lg lg:text-xl mb-8 leading-relaxed max-w-2xl font-normal" style={{ color: '#111827' }}>
               Na Clínica Inove, acreditamos que a verdadeira estética começa pela função. 
               Nossa especialidade é transformar sorrisos com segurança e excelência clínica.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button 
+              <Button
                 className="btn-accent text-base lg:text-lg px-10 py-6"
                 onClick={() => scrollToSection('clinica')}
+                style={{ color: '#f9fafb' }}
               >
                 CLIQUE AQUI PARA SABER MAIS
               </Button>
               
-              <Button 
-                className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary"
+              <Button
+                className="btn-secondary bg-white/10 hover:bg-white hover:text-primary mt-1"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
+                style={{ paddingTop: '8px', paddingBottom: '6px', color: '#111827', border: '2px solid #111827' }}
               >
                 FALAR NO WHATSAPP
               </Button>

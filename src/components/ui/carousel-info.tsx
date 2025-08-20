@@ -38,9 +38,9 @@ const CarouselInfo = ({ items }: CarouselInfoProps) => {
           >
             {items.map((item, index) => (
               <div key={index} className="w-full flex-shrink-0 px-2">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-white/15">
-                  <h4 className="text-xl font-semibold text-accent mb-3">{item.title}</h4>
-                  <p className="text-lg text-white/80">{item.description}</p>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-3 transition-all duration-300 hover:bg-white/15">
+                  <h4 className="text-sm font-semibold text-accent mb-1">{item.title}</h4>
+                  <p className="text-xs text-white/80">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -48,7 +48,7 @@ const CarouselInfo = ({ items }: CarouselInfoProps) => {
         </div>
 
         {/* Mobile Indicators */}
-        <div className="flex justify-center mt-4 space-x-2">
+        <div className="flex justify-center mt-2 space-x-2">
           {items.map((_, index) => (
             <button
               key={index}
@@ -68,9 +68,9 @@ const CarouselInfo = ({ items }: CarouselInfoProps) => {
       {/* Desktop: Grid View */}
       <div className="hidden sm:grid sm:grid-cols-2 gap-6 lg:gap-8">
         {items.map((item, index) => (
-          <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
-            <h4 className="text-xl lg:text-2xl font-semibold text-accent mb-3">{item.title}</h4>
-            <p className="text-lg lg:text-xl text-white/80">{item.description}</p>
+          <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-3 lg:p-8 transition-all duration-300 hover:bg-white/15 hover:scale-105">
+            <h4 className="text-sm lg:text-2xl font-semibold text-accent mb-1 lg:mb-3">{item.title}</h4>
+            <p className="text-xs lg:text-xl text-white/80">{item.description}</p>
           </div>
         ))}
       </div>

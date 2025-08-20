@@ -26,7 +26,7 @@ const ProceduresSection = () => {
     <section 
       id="procedimentos"
       ref={sectionRef}
-      className="py-24 lg:py-40 bg-gray-50"
+      className="py-24 lg:py-40 bg-gray-50 flex"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         
@@ -90,8 +90,8 @@ const ProceduresSection = () => {
               </div>
             </div>
             <div className="lg:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F24eee623b9f24dc3acf245eebce5c858?format=webp&width=800"
                 alt="Implantes Dentários"
                 className="w-full rounded-3xl shadow-elegant hover:shadow-glow transition-all duration-500"
               />
@@ -102,14 +102,14 @@ const ProceduresSection = () => {
           <div className={`grid lg:grid-cols-2 gap-16 lg:gap-20 items-center transition-all duration-1000 delay-400 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}>
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            <div className="order-2 lg:order-1">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe4d9e5641bae44afb2e6b6c54e973be7%2F8fbbcb5e15a746bf8980a56eb076e87d?format=webp&width=800"
                 alt="Prótese Protocolo"
                 className="w-full rounded-3xl shadow-elegant hover:shadow-glow transition-all duration-500"
               />
             </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-accent/10 rounded-3xl transform rotate-3" />
                 <div className="relative bg-white rounded-3xl p-10 lg:p-12 shadow-card">

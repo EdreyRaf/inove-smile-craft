@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Inove Brand Colors */
-    --primary: 225 54% 33%; /* #273473 */
+    --primary: 215 28% 17%; /* #111827 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 225 54% 43%;
-    --primary-glow: 225 54% 60%;
+    --primary-light: 215 28% 27%;
+    --primary-glow: 215 28% 37%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -105,6 +105,11 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
 
   body {
@@ -132,16 +137,17 @@ All colors MUST be HSL.
   }
 
   .btn-dark {
-    @apply bg-gray-900 text-white px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:bg-gray-800 hover:shadow-elegant hover:scale-105 active:scale-95;
+    background-color: #111827;
+    @apply text-white px-10 py-5 rounded-full font-bold text-base lg:text-lg tracking-wide transition-all duration-300 hover:shadow-elegant hover:scale-105 active:scale-95;
   }
 
   /* Section Backgrounds */
   .section-primary {
-    @apply bg-gradient-to-br from-primary via-primary-light to-primary;
+    background-color: #f9fafb;
   }
 
   .section-hero {
-    @apply bg-gradient-to-br from-primary/95 via-primary-light/90 to-primary/95;
+    background-color: #f9fafb;
   }
 
   .section-dark {
@@ -168,6 +174,6 @@ All colors MUST be HSL.
 
   /* WhatsApp Floating Button */
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 z-50;
+    @apply fixed bottom-24 sm:bottom-6 right-4 sm:right-6 bg-green-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 z-50;
   }
 }
