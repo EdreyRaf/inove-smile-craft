@@ -34,10 +34,7 @@ const ContactSection = () => {
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-playfair">
-            Entre em Contato
-          </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto" style={{ color: '#111827' }}>
             Quer agendar sua avaliação? Fale com nossa equipe ou visite nossa clínica.
           </p>
         </div>
