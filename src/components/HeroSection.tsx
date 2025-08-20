@@ -41,15 +41,15 @@ const HeroSection = () => {
               <Button
                 className="btn-accent text-base lg:text-lg px-10 py-6"
                 onClick={() => scrollToSection('clinica')}
-                style={{ color: '#111827' }}
+                style={{ color: '#f9fafb' }}
               >
                 CLIQUE AQUI PARA SABER MAIS
               </Button>
               
               <Button
-                className="btn-secondary bg-white/10 border-white hover:bg-white hover:text-primary mt-1"
+                className="btn-secondary bg-white/10 hover:bg-white hover:text-primary mt-1"
                 onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
-                style={{ paddingTop: '8px', paddingBottom: '6px', color: '#111827' }}
+                style={{ paddingTop: '8px', paddingBottom: '6px', color: '#111827', border: '2px solid #111827' }}
               >
                 FALAR NO WHATSAPP
               </Button>
