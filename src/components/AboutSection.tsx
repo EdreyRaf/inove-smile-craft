@@ -67,9 +67,9 @@ const AboutSection = () => {
             <CarouselStats items={statsData} />
           </div>
           
-          <Button 
+          <Button
             className="btn-dark"
-            style={{ backgroundColor: '#ddaf3c' }}
+            style={{ backgroundColor: '#ddaf3c', color: '#111827' }}
             onClick={() => window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5587981164843', '_blank')}
           >
             ENTRAR EM CONTATO
