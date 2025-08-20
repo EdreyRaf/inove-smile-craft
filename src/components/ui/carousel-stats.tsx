@@ -57,8 +57,8 @@ const CarouselStats = ({ items }: CarouselStatsProps) => {
                   <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="font-bold text-white" style={{ fontSize: '27px' }}>{item.value}</span>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-4">{item.title}</h3>
-                  <p className="text-lg text-white/80 leading-relaxed">{item.description}</p>
+                  <h3 className="text-2xl font-semibold mb-4" style={{ color: '#111827' }}>{item.title}</h3>
+                  <p className="text-lg leading-relaxed" style={{ color: '#111827' }}>{item.description}</p>
                 </div>
               </div>
             ))}
@@ -90,8 +90,8 @@ const CarouselStats = ({ items }: CarouselStatsProps) => {
             <div className="w-20 h-20 lg:w-24 lg:h-24 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="lg:text-4xl font-bold text-white" style={{ fontSize: '27px' }}>{item.value}</span>
             </div>
-            <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">{item.title}</h3>
-            <p className="text-lg lg:text-xl text-white/80 leading-relaxed">{item.description}</p>
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-4" style={{ color: '#111827' }}>{item.title}</h3>
+            <p className="text-lg lg:text-xl leading-relaxed" style={{ color: '#111827' }}>{item.description}</p>
           </div>
         ))}
       </div>
